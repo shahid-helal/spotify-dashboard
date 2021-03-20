@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+
+<html class="no-js" lang="zxx">
+<!--<![endif]-->
+
+<head>
+	<!-- Basic Page Needs Meta
+	=================================================== -->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Documentation" />
+
+	<!-- Specific Meta 
+	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   	<meta name="description" content="">
+   	<meta name="keywords" content=""/>
+   	<meta name="author" content="">
+
+	<!-- Title
+	================================================== -->
+    <title>Admin Dashboard</title>
+    
+    <!-- Favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="57x57" href="resources/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="resources/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="resources/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="resources/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="resources/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="resources/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="resources/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="resources/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="resources/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="resources/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/img/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="resources/img/favicon/favicon.ico" >
+    <link rel="manifest" href="resources/img/favicon//manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="resources/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Google Font
+    ================================================== -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"> -->
+
+	<!-- CSS Files
+	================================================== -->
+    <link rel="stylesheet" href="resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="resources/css/all.min.css">
+    <link rel="stylesheet" href="resources/css/simplebar.css">
+    <link rel="stylesheet" href="resources/css/style.css">
+</head>
+<body>
+    <!--[if lte IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+        
+    <div class="user_dashboard">
+        <div class="header">
+            <div class="header-seperation d-flex align-items-center">
+                <a href="index.html" class="site-logo">
+                    <img src="resources/img/logo-w.png" width="120" class="d-none d-md-block" alt="Site Logo">
+                    <img src="resources/img/icon.png" class="d-md-none" alt="Site Logo">
+                </a>
+            </div>
+            <div class="header-quick-nav d-flex align-items-center justify-content-between">
+                <div class="quick-nav-left d-flex align-items-center">
+                    <ul class="list-inline m-0 p-0">
+                        <li class="list-inline-item"><a href="#" id="layout-condensed-toggle"><i class="fa fa-bars"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fas fa-redo-alt"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="far fa-bell"></i></a></li>
+                    </ul>
+                    <form action="#" class="quick-search-form d-flex">
+                        <label for=""><i class="fa fa-search"></i></label>
+                        <input type="search" class="form-control" placeholder="Search Dashboard">
+                    </form>
+                </div>
+                <div class="quick-nav-right d-flex align-items-center">
+                    <div class="avatar-thumb">
+                        <img src="resources/img/avatar.png" class="rounded-circle" alt="Avatar">
+                        <span class="name">Justin Trudeau</span>
+                        <span class="availablity active"></span>
+                    </div>
+                    <ul class="list-inline m-0">
+                        <li class="list-inline-item"><a href="#"><i class="fas fa-sliders-h"></i></a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <div class="page-container">
+            <div class="page-sidebar h-100" data-simplebar>
+                <div class="user-info d-flex">
+                    <div class="avatar me-3">
+                        <img src="resources/img/avatar.png" class="rounded-circle" alt="Avatar">
+                        <span class="availablity active"></span>
+                    </div>
+                    <div class="info-text">
+                        <h6>Justin Trudeau</h6>
+                        <span class="status">Music Expert</span>
+                    </div><!-- /.info-text -->
+                </div>
+                <hr>
+                <div class="sidebar-menu">
+                    <ul class="list-unstyled m-0">
+                        <li>
+                            <a href="/">
+                                <i class="fa fa-home"></i>Dashboard
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/">
+                                <i class="fas fa-list-ul"></i>My Orders
+                            </a>
+                            <ul class="list-unstyled dropmenu">
+                                <li><a href="/">Order List</a></li>
+                                <li><a href="/">Add Order</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/">
+                                <i class="fa fa-home"></i>Subscription
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/">
+                                <i class="fas fa-money-check"></i>Payment Method
+                            </a>
+                            <ul class="list-unstyled dropmenu">
+                                <li><a href="/">Payment Method List</a></li>
+                                <li><a href="/">Add Payment Method</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/">
+                                <i class="far fa-bell"></i>Notification
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/">
+                                <i class="fas fa-shopping-cart"></i>My Cart
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/">
+                                <i class="fas fa-pen-square"></i>Edit Accounts
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/">
+                                <i class="fas fa-power-off"></i>Logout
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="page-content">
+                <h1 class="text-center py-5">Dashboard Details</h1>
+            </div>
+
+        </div><!-- /.page-container -->
+
+    </div>
+    
+    <script src="resources/js/jquery-3.6.0.min.js"></script>
+    <script src="resources/js/bootstrap.bundle.min.js"></script>
+    <script src="resources/js/simplebar.min.js"></script>
+    <script src="resources/js/custom.js"></script>
+</body>
+</html>
