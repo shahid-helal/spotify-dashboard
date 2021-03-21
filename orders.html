@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+
+<html class="no-js" lang="zxx">
+<!--<![endif]-->
+
+<head>
+	<!-- Basic Page Needs Meta
+	=================================================== -->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Spotify Dashboard" />
+
+	<!-- Specific Meta 
+	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   	<meta name="description" content="">
+   	<meta name="keywords" content=""/>
+   	<meta name="author" content="">
+
+	<!-- Title
+	================================================== -->
+    <title>Manage Order | Admin Dashboard</title>
+    
+    <!-- Favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="57x57" href="resources/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="resources/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="resources/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="resources/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="resources/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="resources/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="resources/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="resources/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="resources/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="resources/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/img/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="resources/img/favicon/favicon.ico" >
+    <link rel="manifest" href="resources/img/favicon//manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="resources/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Google Font
+    ================================================== -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+	<!-- CSS Files
+	================================================== -->
+    <link rel="stylesheet" href="resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="resources/css/all.min.css">
+    <link rel="stylesheet" href="resources/css/simplebar.css">
+    <link rel="stylesheet" href="resources/css/style.css">
+</head>
+<body>
+    <!--[if lte IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+        
+    <div class="user_dashboard">
+        <div class="header">
+            <div class="header-seperation d-flex align-items-center">
+                <a href="index.html" class="site-logo">
+                    <img src="resources/img/logo-w.png" width="120" class="d-none d-md-block" alt="Site Logo">
+                    <img src="resources/img/icon.png" class="d-md-none" alt="Site Logo">
+                </a>
+            </div>
+            <div class="header-quick-nav d-flex align-items-center justify-content-between">
+                <div class="quick-nav-left d-flex align-items-center">
+                    <ul class="list-inline m-0 p-0">
+                        <li class="list-inline-item"><a href="#" id="layout-condensed-toggle"><i class="fa fa-bars"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fas fa-redo-alt"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="far fa-bell"></i></a></li>
+                    </ul>
+                    <form action="#" class="quick-search-form d-flex">
+                        <label><i class="fa fa-search"></i></label>
+                        <input type="search" class="form-control" placeholder="Search Dashboard">
+                    </form>
+                </div>
+                <div class="quick-nav-right d-flex align-items-center">
+                    <div class="avatar-thumb">
+                        <img src="resources/img/avatar.png" class="rounded-circle" alt="Avatar">
+                        <span class="name">Justin Trudeau</span>
+                        <span class="availablity active"></span>
+                    </div>
+                    <ul class="list-inline m-0">
+                        <li class="list-inline-item"><a href="#"><i class="fas fa-sliders-h"></i></a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <div class="page-container">
+            <div class="page-sidebar h-100" data-simplebar>
+                <div class="user-info d-flex">
+                    <div class="avatar me-3">
+                        <img src="resources/img/avatar.png" class="rounded-circle" alt="Avatar">
+                        <span class="availablity active"></span>
+                    </div>
+                    <div class="info-text">
+                        <h6>Justin Trudeau</h6>
+                        <span class="status">Music Expert</span>
+                    </div><!-- /.info-text -->
+                </div>
+                <hr>
+                <div class="sidebar-menu">
+                    <ul class="list-unstyled m-0 accordion accordion-flush">
+                        <li>
+                            <a href="/index.html">
+                                <i class="fa fa-home"></i>Dashboard
+                            </a>
+                        </li>
+                        <li class="accordion-item">
+                            <a href="#order-menu" class="toggle-menu" data-bs-toggle="collapse">
+                                <i class="fas fa-list-ul"></i>Manage Orders
+                            </a>
+                            <ul id="order-menu" class="list-unstyled collapse"  data-bs-parent=".accordion">
+                                <li><a href="/">Order List</a></li>
+                                <li><a href="/">Add Order</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/">
+                                <i class="fa fa-home"></i>Subscription
+                            </a>
+                        </li>
+                        <li class="accordion-item">
+                            <a href="#paymentMethod" class="toggle-menu" data-bs-toggle="collapse">
+                                <i class="fas fa-money-check"></i>Payment Method
+                            </a>
+                            <ul id="paymentMethod" class="list-unstyled collapse"  data-bs-parent=".accordion">
+                                <li><a href="/">Payment Method List</a></li>
+                                <li><a href="/">Add Payment Method</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/">
+                                <i class="far fa-bell"></i>Notification
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/">
+                                <i class="fas fa-pen-square"></i>Edit Accounts
+                            </a>
+                        </li>
+                        <li><a href="/">
+                                <i class="fas fa-power-off"></i>Logout
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="page-content">
+
+                <div class="order-details-tab">
+                    <div class="order-table-nav">
+                        <div class="row">
+                            <div class="col-lg">
+                                <div class="nav nav-tabs" role="tablist">
+                                    <a class="nav-link active" data-bs-toggle="tab" href="#nav-active" role="tab">ACTIVE <span>14</span></a>
+                                    <a class="nav-link" data-bs-toggle="tab" href="#nav-delivered" role="tab">DELIVERED <span>5</span></a>
+                                    <a class="nav-link" data-bs-toggle="tab" href="#nav-completed" role="tab">COMPLETED <span>1.7k</span></a>
+                                    <a class="nav-link" data-bs-toggle="tab" href="#nav-cancelled" role="tab">CANCELLED <span>40</span></a>
+                                </div>
+                            </div><!-- /.col-lg -->
+                            <div class="col-lg-auto">
+                                <form action="#" class="search-order-form">
+                                    <div class="input-group">
+                                        <input type="search" class="form-control" placeholder="search order">
+                                        <button type="submit"><i class="fa fa-search"></i></button>
+                                    </div>
+                                </form>
+                            </div><!-- /.col-lg -->
+                        </div><!-- /.row -->
+                    </div><!-- /.order-table-nav -->
+
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade active show" id="nav-active" role="tabpanel">
+                            <div class="bg-white mt-4 pt-2">
+                                <div class="tab-title">ACTIVE ORDERS</div>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th class="border-top-0">Product Details</th>
+                                                <th class="border-top-0">Additional Info</th>
+                                                <th class="border-top-0">Total</th>
+                                                <th class="border-top-0">Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td data-title="Product Details">
+                                                    <div class="d-sm-flex">
+                                                        <div class="or-roduct-details-img">
+                                                            <img class="img-fluid rounded-3 me-3" width="100" src="https://novastan.org/en/wp-content/uploads/sites/8/2021/02/Spotify.png" alt="icon"></div>
+                                                        <div class="or-roduct-details-dic">
+                                                            <div>organic Spotify Promotion to Real Audience</div>
+                                                            <small>wordpress</small>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td data-title="Additional Info">
+                                                    <div>Order Date: 26 Jun 2020</div>
+                                                    <div>Due Date: 26 Jun 2020</div>
+                                                    <div>Packge: <b>Regular</b></div>
+                                                    <div>Author: <b>Dummy</b></div>
+                                                </td>
+                                                <td data-title="Total">
+                                                    <div class="or-amount">$59</div>
+                                                </td>
+                                                <td data-title="Status" class="status-inprogress text-lg-right">
+                                                    <div>In progress</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Product Details">
+                                                    <div class="d-sm-flex">
+                                                        <div class="or-roduct-details-img">
+                                                            <img class="img-fluid rounded-3 me-3" width="100" src="https://novastan.org/en/wp-content/uploads/sites/8/2021/02/Spotify.png" alt="icon"></div>
+                                                        <div class="or-roduct-details-dic">
+                                                            <div>organic Spotify Promotion to Real Audience</div>
+                                                            <small>wordpress</small>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td data-title="Additional Info">
+                                                    <div>Order Date: 26 Jun 2020</div>
+                                                    <div>Due Date: 26 Jun 2020</div>
+                                                    <div>Packge: <b>Regular</b></div>
+                                                    <div>Author: <b>Dummy</b></div>
+                                                </td>
+                                                <td data-title="Total">
+                                                    <div class="or-amount">$59</div>
+                                                </td>
+                                                <td data-title="Status" class="status-dispute text-lg-right">
+                                                    <div>Dispute</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Product Details">
+                                                    <div class="d-sm-flex">
+                                                        <div class="or-roduct-details-img">
+                                                            <img class="img-fluid rounded-3 me-3" width="100" src="https://novastan.org/en/wp-content/uploads/sites/8/2021/02/Spotify.png" alt="icon"></div>
+                                                        <div class="or-roduct-details-dic">
+                                                            <div>organic Spotify Promotion to Real Audience</div>
+                                                            <small>wordpress</small>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td data-title="Additional Info">
+                                                    <div>Order Date: 26 Jun 2020</div>
+                                                    <div>Due Date: 26 Jun 2020</div>
+                                                    <div>Packge: <b>Regular</b></div>
+                                                    <div>Author: <b>Dummy</b></div>
+                                                </td>
+                                                <td data-title="Total">
+                                                    <div class="or-amount">$59</div>
+                                                </td>
+                                                <td data-title="Status" class="status-cancelled text-lg-right">
+                                                    <div>Cancelled</div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <nav class="text-center">
+                                        <ul class="pagination justify-content-center">
+                                            <li class="page-item disabled">
+                                                <span class="page-link">Previous</span>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item active" aria-current="page">
+                                                <span class="page-link">2</span>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                            <a class="page-link" href="#">Next</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-delivered" role="tabpanel" >
+                            <div class="bg-white mt-4 pt-2">
+                                <div class="tab-title">DELIVERED ORDERS</div>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th class="border-top-0">Product Details</th>
+                                                <th class="border-top-0">Additional Info</th>
+                                                <th class="border-top-0">Total</th>
+                                                <th class="border-top-0">Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td data-title="Product Details">
+                                                    <div class="d-sm-flex">
+                                                        <div class="or-roduct-details-img">
+                                                            <img class="img-fluid rounded-3 me-3" width="100" src="https://www.theyucatantimes.com/wp-content/uploads/2020/08/spotify-logo.png" alt="icon"></div>
+                                                        <div class="or-roduct-details-dic">
+                                                            <div>organic Spotify Promotion to Real Audience</div>
+                                                            <small>wordpress</small>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td data-title="Additional Info">
+                                                    <div>Order Date: 26 Jun 2020</div>
+                                                    <div>Due Date: 26 Jun 2020</div>
+                                                    <div>Packge: <b>Regular</b></div>
+                                                    <div>Author: <b>Dummy</b></div>
+                                                </td>
+                                                <td data-title="Total">
+                                                    <div class="or-amount">$59</div>
+                                                </td>
+                                                <td data-title="Status" class="status-delivered text-lg-right">
+                                                    <div>Delivered</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Product Details">
+                                                    <div class="d-sm-flex">
+                                                        <div class="or-roduct-details-img">
+                                                            <img class="img-fluid rounded-3 me-3" width="100" src="https://www.theyucatantimes.com/wp-content/uploads/2020/08/spotify-logo.png" alt="icon"></div>
+                                                        <div class="or-roduct-details-dic">
+                                                            <div>organic Spotify Promotion to Real Audience</div>
+                                                            <small>wordpress</small>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td data-title="Additional Info">
+                                                    <div>Order Date: 26 Jun 2020</div>
+                                                    <div>Due Date: 26 Jun 2020</div>
+                                                    <div>Packge: <b>Regular</b></div>
+                                                    <div>Author: <b>Dummy</b></div>
+                                                </td>
+                                                <td data-title="Total">
+                                                    <div class="or-amount">$59</div>
+                                                </td>
+                                                <td data-title="Status" class="status-delivered text-lg-right">
+                                                    <div>Delivered</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Product Details">
+                                                    <div class="d-sm-flex">
+                                                        <div class="or-roduct-details-img">
+                                                            <img class="img-fluid rounded-3 me-3" width="100" src="https://www.theyucatantimes.com/wp-content/uploads/2020/08/spotify-logo.png" alt="icon"></div>
+                                                        <div class="or-roduct-details-dic">
+                                                            <div>organic Spotify Promotion to Real Audience</div>
+                                                            <small>wordpress</small>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td data-title="Additional Info">
+                                                    <div>Order Date: 26 Jun 2020</div>
+                                                    <div>Due Date: 26 Jun 2020</div>
+                                                    <div>Packge: <b>Regular</b></div>
+                                                    <div>Author: <b>Dummy</b></div>
+                                                </td>
+                                                <td data-title="Total">
+                                                    <div class="or-amount">$59</div>
+                                                </td>
+                                                <td data-title="Status" class="status-delivered text-lg-right">
+                                                    <div>Delivered</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Product Details">
+                                                    <div class="d-sm-flex">
+                                                        <div class="or-roduct-details-img">
+                                                            <img class="img-fluid rounded-3 me-3" width="100" src="https://www.theyucatantimes.com/wp-content/uploads/2020/08/spotify-logo.png" alt="icon"></div>
+                                                        <div class="or-roduct-details-dic">
+                                                            <div>organic Spotify Promotion to Real Audience</div>
+                                                            <small>wordpress</small>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td data-title="Additional Info">
+                                                    <div>Order Date: 26 Jun 2020</div>
+                                                    <div>Due Date: 26 Jun 2020</div>
+                                                    <div>Packge: <b>Regular</b></div>
+                                                    <div>Author: <b>Dummy</b></div>
+                                                </td>
+                                                <td data-title="Total">
+                                                    <div class="or-amount">$59</div>
+                                                </td>
+                                                <td data-title="Status" class="status-delivered text-lg-right">
+                                                    <div>Delivered</div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <nav class="text-center">
+                                        <ul class="pagination justify-content-center">
+                                            <li class="page-item disabled">
+                                                <span class="page-link">Previous</span>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item active" aria-current="page">
+                                                <span class="page-link">2</span>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                            <a class="page-link" href="#">Next</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-completed" role="tabpanel" >
+                            <div class="bg-white mt-4 pt-2">
+                                <div class="tab-title">COMPLETED ORDERS</div>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th class="border-top-0">Product Details</th>
+                                                <th class="border-top-0">Additional Info</th>
+                                                <th class="border-top-0">Total</th>
+                                                <th class="border-top-0">Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td data-title="Product Details">
+                                                    <div class="d-sm-flex">
+                                                        <div class="or-roduct-details-img">
+                                                            <img class="img-fluid rounded-3 me-3" width="100" src="https://miro.medium.com/max/3000/1*hAaRg1su8VZxpGTXPTrKSg.png" alt="icon"></div>
+                                                        <div class="or-roduct-details-dic">
+                                                            <div>organic Spotify Promotion to Real Audience</div>
+                                                            <small>wordpress</small>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td data-title="Additional Info">
+                                                    <div>Order Date: 26 Jun 2020</div>
+                                                    <div>Due Date: 26 Jun 2020</div>
+                                                    <div>Packge: <b>Regular</b></div>
+                                                    <div>Author: <b>Dummy</b></div>
+                                                </td>
+                                                <td data-title="Total">
+                                                    <div class="or-amount">$59</div>
+                                                </td>
+                                                <td data-title="Status" class="status-completed text-lg-right">
+                                                    <div>Completed</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Product Details">
+                                                    <div class="d-sm-flex">
+                                                        <div class="or-roduct-details-img">
+                                                            <img class="img-fluid rounded-3 me-3" width="100" src="https://miro.medium.com/max/3000/1*hAaRg1su8VZxpGTXPTrKSg.png" alt="icon"></div>
+                                                        <div class="or-roduct-details-dic">
+                                                            <div>organic Spotify Promotion to Real Audience</div>
+                                                            <small>wordpress</small>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td data-title="Additional Info">
+                                                    <div>Order Date: 26 Jun 2020</div>
+                                                    <div>Due Date: 26 Jun 2020</div>
+                                                    <div>Packge: <b>Regular</b></div>
+                                                    <div>Author: <b>Dummy</b></div>
+                                                </td>
+                                                <td data-title="Total">
+                                                    <div class="or-amount">$59</div>
+                                                </td>
+                                                <td data-title="Status" class="status-completed text-lg-right">
+                                                    <div>Completed</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Product Details">
+                                                    <div class="d-sm-flex">
+                                                        <div class="or-roduct-details-img">
+                                                            <img class="img-fluid rounded-3 me-3" width="100" src="https://miro.medium.com/max/3000/1*hAaRg1su8VZxpGTXPTrKSg.png" alt="icon"></div>
+                                                        <div class="or-roduct-details-dic">
+                                                            <div>organic Spotify Promotion to Real Audience</div>
+                                                            <small>wordpress</small>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td data-title="Additional Info">
+                                                    <div>Order Date: 26 Jun 2020</div>
+                                                    <div>Due Date: 26 Jun 2020</div>
+                                                    <div>Packge: <b>Regular</b></div>
+                                                    <div>Author: <b>Dummy</b></div>
+                                                </td>
+                                                <td data-title="Total">
+                                                    <div class="or-amount">$59</div>
+                                                </td>
+                                                <td data-title="Status" class="status-completed text-lg-right">
+                                                    <div>Completed</div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <nav class="text-center">
+                                        <ul class="pagination justify-content-center">
+                                            <li class="page-item disabled">
+                                                <span class="page-link">Previous</span>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item active" aria-current="page">
+                                                <span class="page-link">2</span>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                            <a class="page-link" href="#">Next</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-cancelled" role="tabpanel" >
+                            <div class="bg-white mt-4 pt-2">
+                                <div class="tab-title">CANCELLED ORDERS</div>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th class="border-top-0">Product Details</th>
+                                                <th class="border-top-0">Additional Info</th>
+                                                <th class="border-top-0">Total</th>
+                                                <th class="border-top-0">Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td data-title="Product Details">
+                                                    <div class="d-sm-flex">
+                                                        <div class="or-roduct-details-img">
+                                                            <img class="img-fluid rounded-3 me-3" width="100" src="https://miro.medium.com/max/3000/1*hAaRg1su8VZxpGTXPTrKSg.png" alt="icon"></div>
+                                                        <div class="or-roduct-details-dic">
+                                                            <div>organic Spotify Promotion to Real Audience</div>
+                                                            <small>wordpress</small>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td data-title="Additional Info">
+                                                    <div>Order Date: 26 Jun 2020</div>
+                                                    <div>Due Date: 26 Jun 2020</div>
+                                                    <div>Packge: <b>Regular</b></div>
+                                                    <div>Author: <b>Dummy</b></div>
+                                                </td>
+                                                <td data-title="Total">
+                                                    <div class="or-amount">$59</div>
+                                                </td>
+                                                <td data-title="Status" class="status-completed text-lg-right">
+                                                    <div>Completed</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Product Details">
+                                                    <div class="d-sm-flex">
+                                                        <div class="or-roduct-details-img">
+                                                            <img class="img-fluid rounded-3 me-3" width="100" src="https://www.theyucatantimes.com/wp-content/uploads/2020/08/spotify-logo.png" alt="icon"></div>
+                                                        <div class="or-roduct-details-dic">
+                                                            <div>organic Spotify Promotion to Real Audience</div>
+                                                            <small>wordpress</small>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td data-title="Additional Info">
+                                                    <div>Order Date: 26 Jun 2020</div>
+                                                    <div>Due Date: 26 Jun 2020</div>
+                                                    <div>Packge: <b>Regular</b></div>
+                                                    <div>Author: <b>Dummy</b></div>
+                                                </td>
+                                                <td data-title="Total">
+                                                    <div class="or-amount">$59</div>
+                                                </td>
+                                                <td data-title="Status" class="status-completed text-lg-right">
+                                                    <div>Completed</div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <nav class="text-center">
+                                        <ul class="pagination justify-content-center">
+                                            <li class="page-item disabled">
+                                                <span class="page-link">Previous</span>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item active" aria-current="page">
+                                                <span class="page-link">2</span>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                            <a class="page-link" href="#">Next</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="no-content text-center d-none">
+                    <p><i class="fa fa-exclamation-triangle"></i> No order has been made yet</p>
+                    <a href="#">Browse Products</a>
+                </div>
+            </div>
+
+        </div><!-- /.page-container -->
+
+    </div>
+    
+    <script src="resources/js/jquery-3.6.0.min.js"></script>
+    <script src="resources/js/bootstrap.bundle.min.js"></script>
+    <script src="resources/js/simplebar.min.js"></script>
+    <script src="resources/js/custom.js"></script>
+</body>
+</html>

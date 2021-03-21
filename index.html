@@ -14,7 +14,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta property="og:locale" content="en_US" />
 	<meta property="og:type" content="website" />
-	<meta property="og:title" content="Documentation" />
+	<meta property="og:title" content="Spotify Dashboard" />
 
 	<!-- Specific Meta 
 	================================================== -->
@@ -50,7 +50,7 @@
 
     <!-- Google Font
     ================================================== -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 	<!-- CSS Files
 	================================================== -->
@@ -81,7 +81,7 @@
                         <li class="list-inline-item"><a href="#"><i class="far fa-bell"></i></a></li>
                     </ul>
                     <form action="#" class="quick-search-form d-flex">
-                        <label for=""><i class="fa fa-search"></i></label>
+                        <label><i class="fa fa-search"></i></label>
                         <input type="search" class="form-control" placeholder="Search Dashboard">
                     </form>
                 </div>
@@ -112,18 +112,18 @@
                 </div>
                 <hr>
                 <div class="sidebar-menu">
-                    <ul class="list-unstyled m-0">
+                    <ul class="list-unstyled m-0 accordion accordion-flush">
                         <li>
-                            <a href="/">
+                            <a href="/index.html">
                                 <i class="fa fa-home"></i>Dashboard
                             </a>
                         </li>
-                        <li>
-                            <a href="/">
-                                <i class="fas fa-list-ul"></i>My Orders
+                        <li class="accordion-item">
+                            <a href="#order-menu" class="toggle-menu" data-bs-toggle="collapse">
+                                <i class="fas fa-list-ul"></i>Manage Orders
                             </a>
-                            <ul class="list-unstyled dropmenu">
-                                <li><a href="/">Order List</a></li>
+                            <ul id="order-menu" class="list-unstyled collapse"  data-bs-parent=".accordion">
+                                <li><a href="/orders.html">Order List</a></li>
                                 <li><a href="/">Add Order</a></li>
                             </ul>
                         </li>
@@ -132,11 +132,11 @@
                                 <i class="fa fa-home"></i>Subscription
                             </a>
                         </li>
-                        <li>
-                            <a href="/">
+                        <li class="accordion-item">
+                            <a href="#paymentMethod" class="toggle-menu" data-bs-toggle="collapse">
                                 <i class="fas fa-money-check"></i>Payment Method
                             </a>
-                            <ul class="list-unstyled dropmenu">
+                            <ul id="paymentMethod" class="list-unstyled collapse"  data-bs-parent=".accordion">
                                 <li><a href="/">Payment Method List</a></li>
                                 <li><a href="/">Add Payment Method</a></li>
                             </ul>
@@ -148,16 +148,10 @@
                         </li>
                         <li>
                             <a href="/">
-                                <i class="fas fa-shopping-cart"></i>My Cart
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/">
                                 <i class="fas fa-pen-square"></i>Edit Accounts
                             </a>
                         </li>
-                        <li>
-                            <a href="/">
+                        <li><a href="/">
                                 <i class="fas fa-power-off"></i>Logout
                             </a>
                         </li>
@@ -167,7 +161,10 @@
             </div>
 
             <div class="page-content">
-                <h1 class="text-center py-5">Dashboard Details</h1>
+                <div class="text-center welcome-text">
+                    <p>Welcome to your new account dashboard!</p>
+                    <p>From here you can <a href="#">view your recent orders</a>, <a href="#">modify your biling address</a>, <a href="#">manage your account funds</a> and <a href="#">edit your password and account details</a>.</p>
+                </div>
             </div>
 
         </div><!-- /.page-container -->
