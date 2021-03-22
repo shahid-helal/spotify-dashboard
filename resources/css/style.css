@@ -23,7 +23,7 @@ body {
   direction: ltr;
   background-color: #1b1e24;
   color: #6f7b8a;
-  font-family: 'Roboto';
+  font-family: 'Poppins', sans-serif;
   font-size: 13px;
   padding: 0px !important;
   margin: 0px !important;
@@ -34,6 +34,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+h6, h5, h4, h3, h2, h1 {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
 .header-seperation {
     background-color: #22262e;
 }
@@ -63,6 +67,11 @@ body {
 }
 
 
+.page-sidebar {
+
+}
+
+
 
 .page-container {
     -webkit-transition: -webkit-transform 0.3s ease, left 0.3s ease, right 0.3s ease;
@@ -81,10 +90,52 @@ body {
     bottom: 0;
     width: 250px;
     margin-top: 58px;
+    padding: 20px 0;
     font-family: 'Roboto', sans-serif;
     backface-visibility: hidden;
     background-color: rgb(27, 30, 36);
     transition: transform 0.3s ease 0s;
+}
+.page-container .page-sidebar .user-info {
+  padding: 0 20px;
+  color: #fff;
+}
+.page-sidebar .user-info h6 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+}
+.page-sidebar .user-info span {
+    font-weight: 300;
+    opacity: 0.7;
+}
+.page-sidebar ul li a {
+    text-decoration: none;
+    color: #8b91a0;
+    display: block;
+    position: relative;
+    margin: 0;
+    border: 0px;
+    padding: 11.5px 28px 11.5px 28px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: normal;
+    transition: all 0.3s;
+}
+.page-sidebar ul li a:hover {
+    color: #fff;
+}
+.page-sidebar ul li a i {
+    width: 30px;
+}
+.page-sidebar ul li a.active {
+    color: #fff;
+}
+.page-sidebar ul li a span.fa {
+    line-height: 22px;
+}
+.page-sidebar ul li li a {
+    padding-left: 58px;
 }
 .page-container .page-content {
     position: fixed;
@@ -97,5 +148,9 @@ body {
     right: 0;
     top: 0;
     width: 100%;
+    height: 100%;
     z-index: -10;
 }
+
+
+

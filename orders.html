@@ -50,7 +50,7 @@
 
     <!-- Google Font
     ================================================== -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 	<!-- CSS Files
 	================================================== -->
@@ -101,7 +101,7 @@
         <div class="page-container">
             <div class="page-sidebar h-100" data-simplebar>
                 <div class="user-info d-flex">
-                    <div class="avatar me-3">
+                    <div class="avatar me-2">
                         <img src="resources/img/avatar.png" class="rounded-circle" alt="Avatar">
                         <span class="availablity active"></span>
                     </div>
@@ -114,22 +114,23 @@
                 <div class="sidebar-menu">
                     <ul class="list-unstyled m-0 accordion accordion-flush">
                         <li>
-                            <a href="/index.html">
+                            <a href="index.html">
                                 <i class="fa fa-home"></i>Dashboard
                             </a>
                         </li>
                         <li class="accordion-item">
-                            <a href="#order-menu" class="toggle-menu" data-bs-toggle="collapse">
+                            <a href="#order-menu" class="toggle-menu active" data-bs-toggle="collapse" aria-expanded="true">
                                 <i class="fas fa-list-ul"></i>Manage Orders
+                                <span class="float-end fa fa-angle-down"></span>
                             </a>
-                            <ul id="order-menu" class="list-unstyled collapse"  data-bs-parent=".accordion">
-                                <li><a href="/">Order List</a></li>
+                            <ul id="order-menu" class="list-unstyled collapse show" data-bs-parent=".accordion">
+                                <li><a href="/orders.html" class="active">Order List</a></li>
                                 <li><a href="/">Add Order</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="/">
-                                <i class="fa fa-home"></i>Subscription
+                            <a href="reports.html">
+                                <i class="fa fa-home"></i>Reports
                             </a>
                         </li>
                         <li class="accordion-item">
@@ -137,27 +138,23 @@
                                 <i class="fas fa-money-check"></i>Payment Method
                             </a>
                             <ul id="paymentMethod" class="list-unstyled collapse"  data-bs-parent=".accordion">
-                                <li><a href="/">Payment Method List</a></li>
-                                <li><a href="/">Add Payment Method</a></li>
+                                <li><a href="/payments.html">Payment Method List</a></li>
+                                <li><a href="/add-payments.html">Add Payment Method</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="/">
-                                <i class="far fa-bell"></i>Notification
+                            <a href="edit-accounts.html">
+                                <i class="fa fa-edit"></i>
+                                Edit Account
                             </a>
                         </li>
                         <li>
                             <a href="/">
-                                <i class="fas fa-pen-square"></i>Edit Accounts
-                            </a>
-                        </li>
-                        <li><a href="/">
                                 <i class="fas fa-power-off"></i>Logout
                             </a>
                         </li>
                     </ul>
                 </div>
-
             </div>
 
             <div class="page-content">

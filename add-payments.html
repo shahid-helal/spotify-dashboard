@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+
+<html class="no-js" lang="zxx">
+<!--<![endif]-->
+
+<head>
+	<!-- Basic Page Needs Meta
+	=================================================== -->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Spotify Dashboard" />
+
+	<!-- Specific Meta 
+	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   	<meta name="description" content="">
+   	<meta name="keywords" content=""/>
+   	<meta name="author" content="">
+
+	<!-- Title
+	================================================== -->
+    <title>Admin Dashboard</title>
+    
+    <!-- Favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="57x57" href="resources/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="resources/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="resources/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="resources/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="resources/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="resources/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="resources/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="resources/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="resources/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="resources/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/img/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="resources/img/favicon/favicon.ico" >
+    <link rel="manifest" href="resources/img/favicon//manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="resources/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Google Font
+    ================================================== -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+	<!-- CSS Files
+	================================================== -->
+    <link rel="stylesheet" href="resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="resources/css/all.min.css">
+    <link rel="stylesheet" href="resources/css/simplebar.css">
+    <link rel="stylesheet" href="resources/css/style.css">
+</head>
+<body>
+    <!--[if lte IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+        
+    <div class="user_dashboard">
+        <div class="header">
+            <div class="header-seperation d-flex align-items-center">
+                <a href="index.html" class="site-logo">
+                    <img src="resources/img/logo-w.png" width="120" class="d-none d-md-block" alt="Site Logo">
+                    <img src="resources/img/icon.png" class="d-md-none" alt="Site Logo">
+                </a>
+            </div>
+            <div class="header-quick-nav d-flex align-items-center justify-content-between">
+                <div class="quick-nav-left d-flex align-items-center">
+                    <ul class="list-inline m-0 p-0">
+                        <li class="list-inline-item"><a href="#" id="layout-condensed-toggle"><i class="fa fa-bars"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fas fa-redo-alt"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="far fa-bell"></i></a></li>
+                    </ul>
+                    <form action="#" class="quick-search-form d-flex">
+                        <label><i class="fa fa-search"></i></label>
+                        <input type="search" class="form-control" placeholder="Search Dashboard">
+                    </form>
+                </div>
+                <div class="quick-nav-right d-flex align-items-center">
+                    <div class="avatar-thumb">
+                        <img src="resources/img/avatar.png" class="rounded-circle" alt="Avatar">
+                        <span class="name">Justin Trudeau</span>
+                        <span class="availablity active"></span>
+                    </div>
+                    <ul class="list-inline m-0">
+                        <li class="list-inline-item"><a href="#"><i class="fas fa-sliders-h"></i></a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <div class="page-container">
+            <div class="page-sidebar h-100" data-simplebar>
+                <div class="user-info d-flex">
+                    <div class="avatar me-2">
+                        <img src="resources/img/avatar.png" class="rounded-circle" alt="Avatar">
+                        <span class="availablity active"></span>
+                    </div>
+                    <div class="info-text">
+                        <h6>Justin Trudeau</h6>
+                        <span class="status">Music Expert</span>
+                    </div><!-- /.info-text -->
+                </div>
+                <hr>
+                <div class="sidebar-menu">
+                    <ul class="list-unstyled m-0 accordion accordion-flush">
+                        <li>
+                            <a href="index.html">
+                                <i class="fa fa-home"></i>Dashboard
+                            </a>
+                        </li>
+                        <li class="accordion-item">
+                            <a href="#order-menu" class="toggle-menu" data-bs-toggle="collapse">
+                                <i class="fas fa-list-ul"></i>Manage Orders
+                                <span class="float-end fa fa-angle-down"></span>
+                            </a>
+                            <ul id="order-menu" class="list-unstyled collapse"  data-bs-parent=".accordion">
+                                <li><a href="/orders.html">Order List</a></li>
+                                <li><a href="/">Add Order</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="reports.html">
+                                <i class="fa fa-home"></i>Reports
+                            </a>
+                        </li>
+                        <li class="accordion-item">
+                            <a href="#paymentMethod" class="toggle-menu active" data-bs-toggle="collapse">
+                                <i class="fas fa-money-check"></i>Payment Method
+                            </a>
+                            <ul id="paymentMethod" class="list-unstyled collapse show"  data-bs-parent=".accordion">
+                                <li><a href="/payments.html">Payment Method List</a></li>
+                                <li><a href="/add-payments.html" class="active">Add Payment Method</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="edit-accounts.html">
+                                <i class="fa fa-edit"></i>
+                                Edit Account
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/">
+                                <i class="fas fa-power-off"></i>Logout
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="page-content"  data-simplebar>
+                <div class="container ">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6 bg-white">
+                            <div class="form-header border-bottom">
+                                <h5 class="m-0 p-3">Add a new payment method</h5>
+                            </div><!-- /.form-header -->
+                            <form action="#" class="add-pmt-method-form" >
+                                <nav>
+                                    <div class="nav nav-tabs" role="tablist">
+                                        <a href="#pmt-credit-card" class="nav-link active form-check" data-bs-toggle="tab" role="tab">
+                                            Credit Card
+                                        </a>
+                                        <a href="#pmt-paypal" class="nav-link form-check" data-bs-toggle="tab" role="tab">
+                                            Paypal
+                                        </a>                                  
+                                    </div>
+                                </nav>
+
+                                <div class="tab-content">
+                                    <div class="tab-pane fade show active p-4" id="pmt-credit-card" role="tabpanel">
+                                       <div class="input-group">
+                                            <label>Country <span class="text-danger">*</span></label>
+                                            <select class="form-select w-100" required>
+                                                <option selected>Select Country</option>
+                                                <option value="1">Australia</option>
+                                                <option value="2">Bangladesh</option>
+                                                <option value="3">USA</option>
+                                            </select>
+                                       </div>
+                                       <div class="row">
+                                            <div class="col-md-5">
+                                                <div class="input-group">
+                                                    <label>Credit Card Number <span class="text-danger">*</span></label>
+                                                    <input type="text" inputmode="numeric" class="w-100 form-control" placeholder="xxxx xxxx xxxx" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <div class="row">
+                                                    <div class="col-md-8">
+                                                        <div class="form-group">
+                                                            <label>Expires</label>
+                                                            <div class="input-group">
+                                                                <input type="text" inputmode="numeric" min="1" max="12" class="form-control">
+                                                                <span class="input-group-text bg-transparent border-0">/</span>
+                                                                <input type="text" inputmode="numeric" min="1" max="31" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label>CCV <span class="text-danger">*</span></label>
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                       </div>
+                                       <div class="input-group">
+                                           <label>Name on Credit Card <span class="text-danger">*</span></label>
+                                           <input type="text" class="form-control w-100" placeholder="Name on Card" required>
+                                       </div>
+                                       <div class="row">
+                                            <div class="col-md-8">
+                                                <div class="input-group">
+                                                    <label>Street Address <span class="text-danger">*</span></label>
+                                                    <input type="text" class="w-100 form-control" placeholder="Street Address" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="input-group">
+                                                    <label>ZIP Code <span class="text-danger">*</span></label>
+                                                    <input type="text" class="w-100 form-control" placeholder="Zip Code" required>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="text-end mt-3 form-submission">
+                                            <ul class="list-linline m-0">
+                                                <li class="list-inline-item"><button type="reset" class="btn btn-danger">Cancel</button></li>
+                                                <li class="list-inline-item"><button type="submit" class="btn btn-success">Add Credit Card</button></li>
+                                            </ul>
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="tab-pane fade p-4" id="pmt-paypal" role="tabpanel">
+                                        <div class="input-group">
+                                            <label>Country <span class="text-danger">*</span></label>
+                                            <select class="form-select w-100" required>
+                                                <option selected>Select Country</option>
+                                                <option value="1">Australia</option>
+                                                <option value="2">Bangladesh</option>
+                                                <option value="3">USA</option>
+                                            </select>
+                                       </div>
+                                       <div class="row">
+                                            <div class="col-md-5">
+                                                <div class="input-group">
+                                                    <label>Credit Card Number <span class="text-danger">*</span></label>
+                                                    <input type="text" inputmode="numeric" class="w-100 form-control" placeholder="xxxx xxxx xxxx" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <div class="row">
+                                                    <div class="col-md-8">
+                                                        <div class="form-group">
+                                                            <label>Expires</label>
+                                                            <div class="input-group">
+                                                                <input type="text" inputmode="numeric" min="1" max="12" class="form-control">
+                                                                <span class="input-group-text bg-transparent border-0">/</span>
+                                                                <input type="text" inputmode="numeric" min="1" max="31" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label>CCV <span class="text-danger">*</span></label>
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                       </div>
+                                       <div class="input-group">
+                                           <label>Name on Credit Card <span class="text-danger">*</span></label>
+                                           <input type="text" class="form-control w-100" placeholder="Name on Card" required>
+                                       </div>
+                                       <div class="row">
+                                            <div class="col-md-8">
+                                                <div class="input-group">
+                                                    <label>Street Address <span class="text-danger">*</span></label>
+                                                    <input type="text" class="w-100 form-control" placeholder="Street Address" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="input-group">
+                                                    <label>ZIP Code <span class="text-danger">*</span></label>
+                                                    <input type="text" class="w-100 form-control" placeholder="Zip Code" required>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="text-end mt-3 form-submission">
+                                            <ul class="list-linline m-0">
+                                                <li class="list-inline-item"><button type="reset" class="btn btn-danger">Cancel</button></li>
+                                                <li class="list-inline-item"><button type="submit" class="btn btn-success">Add Credit Card</button></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </form>
+                        </div><!-- /.col-md-8 -->
+                    </div><!-- /.row -->
+                </div><!-- /.container -->
+            </div>
+
+        </div><!-- /.page-container -->
+
+    </div>
+    
+    <script src="resources/js/jquery-3.6.0.min.js"></script>
+    <script src="resources/js/bootstrap.bundle.min.js"></script>
+    <script src="resources/js/simplebar.min.js"></script>
+    <script src="resources/js/custom.js"></script>
+</body>
+</html>

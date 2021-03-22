@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+
+<html class="no-js" lang="zxx">
+<!--<![endif]-->
+
+<head>
+	<!-- Basic Page Needs Meta
+	=================================================== -->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Spotify Dashboard" />
+
+	<!-- Specific Meta 
+	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   	<meta name="description" content="">
+   	<meta name="keywords" content=""/>
+   	<meta name="author" content="">
+
+	<!-- Title
+	================================================== -->
+    <title>Admin Dashboard</title>
+    
+    <!-- Favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="57x57" href="resources/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="resources/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="resources/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="resources/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="resources/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="resources/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="resources/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="resources/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="resources/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="resources/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/img/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="resources/img/favicon/favicon.ico" >
+    <link rel="manifest" href="resources/img/favicon//manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="resources/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Google Font
+    ================================================== -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+	<!-- CSS Files
+	================================================== -->
+    <link rel="stylesheet" href="resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="resources/css/all.min.css">
+    <link rel="stylesheet" href="resources/css/simplebar.css">
+    <link rel="stylesheet" href="resources/css/style.css">
+</head>
+<body>
+    <!--[if lte IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+        
+    <div class="user_dashboard">
+        <div class="header">
+            <div class="header-seperation d-flex align-items-center">
+                <a href="index.html" class="site-logo">
+                    <img src="resources/img/logo-w.png" width="120" class="d-none d-md-block" alt="Site Logo">
+                    <img src="resources/img/icon.png" class="d-md-none" alt="Site Logo">
+                </a>
+            </div>
+            <div class="header-quick-nav d-flex align-items-center justify-content-between">
+                <div class="quick-nav-left d-flex align-items-center">
+                    <ul class="list-inline m-0 p-0">
+                        <li class="list-inline-item"><a href="#" id="layout-condensed-toggle"><i class="fa fa-bars"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fas fa-redo-alt"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="far fa-bell"></i></a></li>
+                    </ul>
+                    <form action="#" class="quick-search-form d-flex">
+                        <label><i class="fa fa-search"></i></label>
+                        <input type="search" class="form-control" placeholder="Search Dashboard">
+                    </form>
+                </div>
+                <div class="quick-nav-right d-flex align-items-center">
+                    <div class="avatar-thumb">
+                        <img src="resources/img/avatar.png" class="rounded-circle" alt="Avatar">
+                        <span class="name">Justin Trudeau</span>
+                        <span class="availablity active"></span>
+                    </div>
+                    <ul class="list-inline m-0">
+                        <li class="list-inline-item"><a href="#"><i class="fas fa-sliders-h"></i></a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <div class="page-container">
+            <div class="page-sidebar h-100" data-simplebar>
+                <div class="user-info d-flex">
+                    <div class="avatar me-2">
+                        <img src="resources/img/avatar.png" class="rounded-circle" alt="Avatar">
+                        <span class="availablity active"></span>
+                    </div>
+                    <div class="info-text">
+                        <h6>Justin Trudeau</h6>
+                        <span class="status">Music Expert</span>
+                    </div><!-- /.info-text -->
+                </div>
+                <hr>
+                <div class="sidebar-menu">
+                    <ul class="list-unstyled m-0 accordion accordion-flush">
+                        <li>
+                            <a href="index.html">
+                                <i class="fa fa-home"></i>Dashboard
+                            </a>
+                        </li>
+                        <li class="accordion-item">
+                            <a href="#order-menu" class="toggle-menu" data-bs-toggle="collapse">
+                                <i class="fas fa-list-ul"></i>Manage Orders
+                                <span class="float-end fa fa-angle-down"></span>
+                            </a>
+                            <ul id="order-menu" class="list-unstyled collapse"  data-bs-parent=".accordion">
+                                <li><a href="/orders.html">Order List</a></li>
+                                <li><a href="/">Add Order</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="reports.html">
+                                <i class="fa fa-home"></i>Reports
+                            </a>
+                        </li>
+                        <li class="accordion-item">
+                            <a href="#paymentMethod" class="toggle-menu active" data-bs-toggle="collapse">
+                                <i class="fas fa-money-check"></i>Payment Method
+                            </a>
+                            <ul id="paymentMethod" class="list-unstyled collapse show"  data-bs-parent=".accordion">
+                                <li><a href="/payments.html" class="active">Payment Method List</a></li>
+                                <li><a href="/add-payments.html">Add Payment Method</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="edit-accounts.html">
+                                <i class="fa fa-edit"></i>
+                                Edit Account
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/">
+                                <i class="fas fa-power-off"></i>Logout
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="page-content" data-simplebar>
+                <div class="no-info d-none">
+                    <p><i class="fa fa-exclamation-triangle"></i> Sorry, No Saved Payment Method Found</p>
+                    <p><a href="add-payments.html" class="btn btn-success btn-md">Add Payment Method</a></p>
+                </div>
+
+                <div class="pmt-inf-widget">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-3">
+                                <div class="widget-info balance text-center bg-white h-100 p-4">
+                                    <h3 class="text-dark text-bold"><b>$612</b></h3>
+                                    <p class="m-0">Available Balance</p>
+                                </div><!-- /.widget-info -->
+                            </div><!-- /.col-md-6 col-lg-3 -->
+                            <div class="col-md-6 col-lg-3">
+                                <div class="widget-info monthly-spent text-center bg-white h-100 p-4">
+                                    <h3 class="text-primary text-bold"><b>$612</b></h3>
+                                    <p class="m-0">Monthly Spent</p>
+                                </div><!-- /.widget-info -->
+                            </div><!-- /.col-md-6 col-lg-3 -->
+                            <div class="col-md-6 col-lg-3">
+                                <div class="widget-info yearly-spent text-center bg-white h-100 p-4">
+                                    <h3 class="text-success text-bold"><b>$612</b></h3>
+                                    <p class="m-0">Yearly Spent</p>
+                                </div><!-- /.widget-info -->
+                            </div><!-- /.col-md-6 col-lg-3 -->
+                            <div class="col-md-6 col-lg-3">
+                                <div class="widget-info total-spent text-center bg-white h-100 p-4">
+                                    <h3 class="text-danger text-bold"><b>$612</b></h3>
+                                    <p class="m-0">Lifetime Spent</p>
+                                </div><!-- /.widget-info -->
+                            </div><!-- /.col-md-6 col-lg-3 -->
+                        </div><!-- /.row -->
+
+                        <div class="pmt-list bg-white my-4">
+                            <div class="title p-3">
+                                <h5 class="m-0">Payment List</h5>
+                            </div><!-- /.title -->
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">Date/Time</th>
+                                            <th class="text-center">Payment Name</th>
+                                            <th class="text-center">Descripton</th>
+                                            <th class="text-center">Account Type</th>
+                                            <th class="text-center">Payment Method</th>
+                                            <th class="text-center">Discount</th>
+                                            <th class="text-center">Total</th>
+                                            <th class="text-center">Status</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>10.11-2020</td>
+                                            <td>Spotify Lorem ipsum dolor</td>
+                                            <td>A small description goes here</td>
+                                            <td>Premium</td>
+                                            <td>Credit Card</td>
+                                            <td>$0.00</td>
+                                            <td>$380</td>
+                                            <td>Active</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10.11-2020</td>
+                                            <td>Spotify Lorem ipsum dolor</td>
+                                            <td>A small description goes here</td>
+                                            <td>Basic</td>
+                                            <td>Credit Card</td>
+                                            <td>$0.00</td>
+                                            <td>$380</td>
+                                            <td>Pending</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10.11-2020</td>
+                                            <td>Spotify Lorem ipsum dolor</td>
+                                            <td>A small description goes here</td>
+                                            <td>Premium</td>
+                                            <td>Credit Card</td>
+                                            <td>$0.00</td>
+                                            <td>$380</td>
+                                            <td>Completed</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10.11-2020</td>
+                                            <td>Spotify Lorem ipsum dolor</td>
+                                            <td>A small description goes here</td>
+                                            <td>Standard</td>
+                                            <td>Credit Card</td>
+                                            <td>$0.00</td>
+                                            <td>$380</td>
+                                            <td>Cancelled</td>
+                                        </tr>
+                                    </tbody>
+                                </table><!-- /.table -->
+                            </div><!-- /.table-responsive -->
+                        </div><!-- /.pmt-list -->
+
+                        <div class="pmt-methods bg-white my-4">
+                            <div class="title p-3">
+                                <h5 class="m-0">Saved Payment Method</h5>
+                            </div><!-- /.title -->
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">#</th>
+                                            <th class="text-center">Method</th>
+                                            <th class="text-center">Account Number</th>
+                                            <th class="text-center">Expired</th>
+                                            <th class="text-center">Active</th>
+                                            <th class="text-center">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-center">01.</td>
+                                            <td>
+                                                <img src="resources/img/visa.png" width="40" class="img-fluid" alt="Visa Card">
+                                            </td>
+                                            <td>1245********4524</td>
+                                            <td>10-2021</td>
+                                            <td>Yes</td>
+                                            <td class="text-center">
+                                                <a href="#"><i class="fa fa-edit"></i></a>
+                                                <a href="#"><i class="fa fa-trash-alt"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">02.</td>
+                                            <td>
+                                                <img src="resources/img/paypal.png" width="60" class="img-fluid" alt="paypal Card">
+                                            </td>
+                                            <td>1245********4524</td>
+                                            <td class="text-danger">Expired</td>
+                                            <td>No</td>
+                                            <td class="text-center">
+                                                <a href="#"><i class="fa fa-edit"></i></a>
+                                                <a href="#"><i class="fa fa-trash-alt"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">03.</td>
+                                            <td>
+                                                <img src="resources/img/visa.png" width="40" class="img-fluid" alt="Visa Card">
+                                            </td>
+                                            <td>1245********4524</td>
+                                            <td class="text-danger">Expired</td>
+                                            <td>No</td>
+                                            <td class="text-center">
+                                                <a href="#"><i class="fa fa-edit"></i></a>
+                                                <a href="#"><i class="fa fa-trash-alt"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">04.</td>
+                                            <td>
+                                                <img src="resources/img/mc.png" width="40" class="img-fluid" alt="Master Card">
+                                            </td>
+                                            <td>1245********4524</td>
+                                            <td>12-2021</td>
+                                            <td>Yes</td>
+                                            <td class="text-center">
+                                                <a href="#"><i class="fa fa-edit"></i></a>
+                                                <a href="#"><i class="fa fa-trash-alt"></i></a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table><!-- /.table -->
+                            </div><!-- /.table-responsive -->
+                        </div><!-- /.payment-methods -->
+
+                        <div class="add-pmt-method bg-white my-4">
+                            <div class="title p-3">
+                                <h5 class="m-0">Add a Payment Method</h5>
+                            </div><!-- /.title -->
+                            <div class="add-btn p-4 pt-0">
+                                <p class="m-0">To add a new Payment method, click the add a payment button.</p>
+                                <a href="add-payments.html" class="btn btn-success">Add a Payment</a>
+                            </div><!-- /.add-btn -->
+                        </div><!-- /.add-pmt-method -->
+
+                    </div><!-- /.container -->
+                </div>
+            </div>
+
+        </div><!-- /.page-container -->
+
+    </div>
+    
+    <script src="resources/js/jquery-3.6.0.min.js"></script>
+    <script src="resources/js/bootstrap.bundle.min.js"></script>
+    <script src="resources/js/simplebar.min.js"></script>
+    <script src="resources/js/custom.js"></script>
+</body>
+</html>

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+
+<html class="no-js" lang="zxx">
+<!--<![endif]-->
+
+<head>
+	<!-- Basic Page Needs Meta
+	=================================================== -->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Spotify Dashboard" />
+
+	<!-- Specific Meta 
+	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   	<meta name="description" content="">
+   	<meta name="keywords" content=""/>
+   	<meta name="author" content="">
+
+	<!-- Title
+	================================================== -->
+    <title>Admin Dashboard</title>
+    
+    <!-- Favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="57x57" href="resources/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="resources/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="resources/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="resources/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="resources/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="resources/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="resources/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="resources/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="resources/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="resources/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/img/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="resources/img/favicon/favicon.ico" >
+    <link rel="manifest" href="resources/img/favicon//manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="resources/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Google Font
+    ================================================== -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+	<!-- CSS Files
+	================================================== -->
+    <link rel="stylesheet" href="resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="resources/css/all.min.css">
+    <link rel="stylesheet" href="resources/css/simplebar.css">
+    <link rel="stylesheet" href="resources/css/style.css">
+</head>
+<body>
+    <!--[if lte IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+        
+    <div class="user_dashboard">
+        <div class="header">
+            <div class="header-seperation d-flex align-items-center">
+                <a href="index.html" class="site-logo">
+                    <img src="resources/img/logo-w.png" width="120" class="d-none d-md-block" alt="Site Logo">
+                    <img src="resources/img/icon.png" class="d-md-none" alt="Site Logo">
+                </a>
+            </div>
+            <div class="header-quick-nav d-flex align-items-center justify-content-between">
+                <div class="quick-nav-left d-flex align-items-center">
+                    <ul class="list-inline m-0 p-0">
+                        <li class="list-inline-item"><a href="#" id="layout-condensed-toggle"><i class="fa fa-bars"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fas fa-redo-alt"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="far fa-bell"></i></a></li>
+                    </ul>
+                    <form action="#" class="quick-search-form d-flex">
+                        <label><i class="fa fa-search"></i></label>
+                        <input type="search" class="form-control" placeholder="Search Dashboard">
+                    </form>
+                </div>
+                <div class="quick-nav-right d-flex align-items-center">
+                    <div class="avatar-thumb">
+                        <img src="resources/img/avatar.png" class="rounded-circle" alt="Avatar">
+                        <span class="name">Justin Trudeau</span>
+                        <span class="availablity active"></span>
+                    </div>
+                    <ul class="list-inline m-0">
+                        <li class="list-inline-item"><a href="#"><i class="fas fa-sliders-h"></i></a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <div class="page-container">
+            <div class="page-sidebar h-100" data-simplebar>
+                <div class="user-info d-flex">
+                    <div class="avatar me-2">
+                        <img src="resources/img/avatar.png" class="rounded-circle" alt="Avatar">
+                        <span class="availablity active"></span>
+                    </div>
+                    <div class="info-text">
+                        <h6>Justin Trudeau</h6>
+                        <span class="status">Music Expert</span>
+                    </div><!-- /.info-text -->
+                </div>
+                <hr>
+                <div class="sidebar-menu">
+                    <ul class="list-unstyled m-0 accordion accordion-flush">
+                        <li>
+                            <a href="index.html" class="active">
+                                <i class="fa fa-home"></i>Dashboard
+                            </a>
+                        </li>
+                        <li class="accordion-item">
+                            <a href="#order-menu" class="toggle-menu" data-bs-toggle="collapse">
+                                <i class="fas fa-list-ul"></i>Manage Orders
+                                <span class="float-end fa fa-angle-down"></span>
+                            </a>
+                            <ul id="order-menu" class="list-unstyled collapse"  data-bs-parent=".accordion">
+                                <li><a href="/orders.html">Order List</a></li>
+                                <li><a href="/">Add Order</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="reports.html">
+                                <i class="fa fa-home"></i>Reports
+                            </a>
+                        </li>
+                        <li class="accordion-item">
+                            <a href="#paymentMethod" class="toggle-menu" data-bs-toggle="collapse">
+                                <i class="fas fa-money-check"></i>Payment Method
+                            </a>
+                            <ul id="paymentMethod" class="list-unstyled collapse"  data-bs-parent=".accordion">
+                                <li><a href="/payments.html">Payment Method List</a></li>
+                                <li><a href="/add-payments.html">Add Payment Method</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="edit-accounts.html" class="active">
+                                <i class="fa fa-edit"></i>
+                                Edit Account
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/">
+                                <i class="fas fa-power-off"></i>Logout
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="page-content" data-simplebar>
+                <div class="container">
+                    <div class="profile-header bg-white p-4 my-4">
+                        <div class="row align-items-center">
+                            <div class="col-md">
+                                <div class="avatar d-flex align-items-center">
+                                    <div class="thumb">
+                                        <img src="resources/img/avatar-lg.png" width="90" class="rounded-circle" alt="">
+                                    </div><!-- /.thumb -->
+                                    <div class="info">
+                                        <h4>Justin Trudeau</h4>
+                                        <p class="m-0">Spotify Expert</p>
+                                    </div>
+                                </div><!-- /.avatar -->
+                            </div><!-- /.col-md -->
+                            <div class="col-md-auto">
+                                <ul class="list-inline m-0">
+                                    <li class="list-inline-item">
+                                        <a href="#">
+                                            <form action="#">
+                                                <label>
+                                                    <input type="file" id="upload-thumb" class="d-none">
+                                                    Upload Profile Photo
+                                                </label>                                                
+                                            </form>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#">Delete Image</a>
+                                    </li>
+                                </ul>
+                            </div><!-- /.col-md -->
+                        </div><!-- /.row -->
+                    </div><!-- /.profile-header -->
+
+                    <div class="personal-information bg-white p-4 my-4">
+                        <div class="title">
+                            <h5 class="m-0">Personal Information</h5>
+                        </div><!-- /.title -->
+                        <hr>
+
+                        <form action="#" class="personal-inf-form">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="input-group mb-3">
+                                        <label>Full Name <span class="text-danger">*</span></label>
+                                        <input type="text" name="full_name" class="form-control w-100" required>
+                                    </div>
+                                </div><!-- /.col-md-6 -->
+                                <div class="col-md-6">
+                                    <div class="input-group mb-3">
+                                        <label>Username <span class="text-danger">*</span></label>
+                                        <input type="text" name="username" class="form-control w-100" required>
+                                    </div>
+                                </div><!-- /.col-md-6 -->
+                                <div class="col-md-6">
+                                    <div class="input-group mb-3">
+                                        <label>Email Address <span class="text-danger">*</span></label>
+                                        <input type="email" name="email" class="form-control w-100" required>
+                                    </div>
+                                </div><!-- /.col-md-6 -->
+                                <div class="col-md-6">
+                                    <div class="input-group mb-3">
+                                        <label>Website</label>
+                                        <input type="url" name="website" class="form-control w-100">
+                                    </div>
+                                </div><!-- /.col-md-6 -->
+                                <div class="col-md-6">
+                                    <div class="input-group mb-3">
+                                        <label>Password <span class="text-danger">*</span></label>
+                                        <input type="password" name="password" class="form-control w-100" required>
+                                    </div>
+                                </div><!-- /.col-md-6 -->
+                                <div class="col-md-6">
+                                    <div class="input-group mb-3">
+                                        <label>Confirm Password <span class="text-danger">*</span></label>
+                                        <input type="password" name="confirm_password" class="form-control w-100" required>
+                                    </div>
+                                </div><!-- /.col-md-6 -->
+                                <div class="col-md-6">
+                                    <div class="input-group mb-3">
+                                        <label>Country <span class="text-danger">*</span></label>
+                                        <select class="form-select w-100" required>
+                                            <option selected>Select Country</option>
+                                            <option value="1">Australia</option>
+                                            <option value="2">Bangladesh</option>
+                                            <option value="3">USA</option>
+                                            <option value="4">Canada</option>
+                                            <option value="5">Brazil</option>
+                                            <option value="6">Sweden</option>
+                                        </select>
+                                    </div>
+                                </div><!-- /.col-md-6 -->
+                                <div class="col-md-6">
+                                    <div class="input-group mb-3">
+                                        <label>Phone Number</label>
+                                        <input type="tel" name="tel" class="form-control w-100">
+                                    </div>
+                                </div><!-- /.col-md-6 -->
+                                <div class="col-md-6">
+                                    <div class="input-group mb-3">
+                                        <label>About Me</label>
+                                        <textarea name="bio" rows="4" class="form-control w-100"></textarea>
+                                    </div>
+                                </div><!-- /.col-md-6 -->
+                            </div><!-- /.row -->
+                            <div class="form-submission">
+                                <ul class="list-inline m-0">
+                                    <li class="list-inline-item"><button type="reset" class="btn btn-danger">Cancel</button></li>
+                                    <li class="list-inline-item"><button type="submit" class="btn btn-success">Save Changes</button></li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="billing-information bg-white p-4 my-4">
+                        <div class="title">
+                            <h5 class="m-0">Billing Information</h5>
+                        </div><!-- /.title -->
+                        <hr>
+
+                        <form action="#" class="billing-inf-form">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="input-group mb-3">
+                                        <label>Full Name <span class="text-danger">*</span></label>
+                                        <input type="text" name="full_name" class="form-control w-100" required>
+                                    </div>
+                                </div><!-- /.col-md-6 -->
+                                <div class="col-md-6">
+                                    <div class="input-group mb-3">
+                                        <label>Company Name <span class="text-danger">*</span></label>
+                                        <input type="text" name="companyname" class="form-control w-100" required>
+                                    </div>
+                                </div><!-- /.col-md-6 -->
+                                <div class="col-md-6">
+                                    <div class="input-group mb-3">
+                                        <label>Email Address <span class="text-danger">*</span></label>
+                                        <input type="email" name="email" class="form-control w-100" required>
+                                    </div>
+                                </div><!-- /.col-md-6 -->                                
+                                <div class="col-md-6">
+                                    <div class="input-group mb-3">
+                                        <label>Country <span class="text-danger">*</span></label>
+                                        <select class="form-select w-100" required>
+                                            <option selected>Select Country</option>
+                                            <option value="1">Australia</option>
+                                            <option value="2">Bangladesh</option>
+                                            <option value="3">USA</option>
+                                            <option value="4">Canada</option>
+                                            <option value="5">Brazil</option>
+                                            <option value="6">Sweden</option>
+                                        </select>
+                                    </div>
+                                </div><!-- /.col-md-6 -->
+                                <div class="col-md-6">
+                                    <div class="input-group mb-3">
+                                        <label>Address Line1 <span class="text-danger">*</span></label>
+                                        <input type="text" name="address_l1" class="form-control w-100">
+                                    </div>
+                                </div><!-- /.col-md-6 -->
+                                <div class="col-md-6">
+                                    <div class="input-group mb-3">
+                                        <label>Address Line2 <span class="text-danger">*</span></label>
+                                        <input type="text" name="address_l2" class="form-control w-100">
+                                    </div>
+                                </div><!-- /.col-md-6 -->
+                                <div class="col-md-6">
+                                    <div class="input-group mb-3">
+                                        <label>City / State <span class="text-danger">*</span></label>
+                                        <select class="form-select w-100" required>
+                                            <option selected>Select City</option>
+                                            <option value="1">Australia</option>
+                                            <option value="2">Bangladesh</option>
+                                            <option value="3">USA</option>
+                                            <option value="4">Canada</option>
+                                            <option value="5">Brazil</option>
+                                            <option value="6">Sweden</option>
+                                        </select>
+                                    </div>
+                                </div><!-- /.col-md-6 -->
+                                <div class="col-md-6">
+                                    <div class="input-group mb-3">
+                                        <label>ZIP / Postal Code</label>
+                                        <input type="text" inputmode="numeric" name="zip" class="form-control w-100">
+                                    </div>
+                                </div><!-- /.col-md-6 -->
+                                
+                            </div><!-- /.row -->
+                            <div class="form-submission">
+                                <ul class="list-inline m-0">
+                                    <li class="list-inline-item"><button type="reset" class="btn btn-danger">Cancel</button></li>
+                                    <li class="list-inline-item"><button type="submit" class="btn btn-success">Save Changes</button></li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
+                </div><!-- /.container -->
+            </div>
+
+        </div><!-- /.page-container -->
+
+    </div>
+    
+    <script src="resources/js/jquery-3.6.0.min.js"></script>
+    <script src="resources/js/bootstrap.bundle.min.js"></script>
+    <script src="resources/js/simplebar.min.js"></script>
+    <script src="resources/js/custom.js"></script>
+</body>
+</html>
