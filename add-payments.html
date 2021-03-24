@@ -76,11 +76,53 @@
             <div class="header-quick-nav d-flex align-items-center justify-content-between">
                 <div class="quick-nav-left d-flex align-items-center">
                     <ul class="list-inline m-0 p-0">
-                        <li class="list-inline-item"><a href="#" id="layout-condensed-toggle"><i class="fa fa-bars"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="fas fa-redo-alt"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="far fa-bell"></i></a></li>
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fa fa-bars"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fas fa-redo-alt"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#notification" data-bs-toggle="dropdown"><i class="far fa-bell"></i></a>
+                            <ul class="list-unstyled m-0 dropdown-menu" >
+                                <li class="text-center border-bottom mb-3 pb-1">Notification</li>
+                                <li>
+                                    <a href="#">
+                                        <div class="icon me-2">
+                                            <i class="fa fa-user-tie"></i>
+                                        </div><!-- /.icon -->
+                                        <div class="text">
+                                            New User Registered
+                                            <span class="time">Just Now</span>
+                                        </div><!-- /.text -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="icon me-2">
+                                            <i class="fa fa-shopping-cart"></i>
+                                        </div><!-- /.icon -->
+                                        <div class="text">
+                                            New Order has been placed
+                                            <span class="time">2 days</span>
+                                        </div><!-- /.text -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="icon me-2">
+                                            <i class="fa fa-dollar-sign"></i>
+                                        </div><!-- /.icon -->
+                                        <div class="text">
+                                            New Payment has made through Paypal
+                                            <span class="time">1 week</span>
+                                        </div><!-- /.text -->
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
-                    <form action="#" class="quick-search-form d-flex">
+                    <form action="#" class="quick-search-form d-flex position-relative">
                         <label><i class="fa fa-search"></i></label>
                         <input type="search" class="form-control" placeholder="Search Dashboard">
                     </form>
@@ -92,7 +134,26 @@
                         <span class="availablity active"></span>
                     </div>
                     <ul class="list-inline m-0">
-                        <li class="list-inline-item"><a href="#"><i class="fas fa-sliders-h"></i></a></li>
+                        <li class="list-inline-item">
+                            <a href="#user-options" data-bs-toggle="dropdown"><i class="fas fa-sliders-h"></i></a>
+                            <ul class="dropdown-menu pull-end" role="menu" id="user-options">
+                                <li>
+                                  <a href="user-profile.html"> My Account</a>
+                                </li>
+                                <li>
+                                  <a href="calender.html">My Calendar</a>
+                                </li>
+                                <li>
+                                  <a href="email.html"> My Inbox&nbsp;&nbsp;
+                                        <span class="badge badge-important animated bounceIn">2</span>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                  <a href="login.html">Log Out</a>
+                                </li>
+                              </ul>
+                        </li>
                     </ul>
 
                 </div>
@@ -136,6 +197,7 @@
                         <li class="accordion-item">
                             <a href="#paymentMethod" class="toggle-menu active" data-bs-toggle="collapse">
                                 <i class="fas fa-money-check"></i>Payment Method
+                                <span class="float-end fa fa-angle-down"></span>
                             </a>
                             <ul id="paymentMethod" class="list-unstyled collapse show"  data-bs-parent=".accordion">
                                 <li><a href="/payments.html">Payment Method List</a></li>
@@ -255,7 +317,7 @@
                                        <div class="row">
                                             <div class="col-md-5">
                                                 <div class="input-group">
-                                                    <label>Credit Card Number <span class="text-danger">*</span></label>
+                                                    <label>Account Number <span class="text-danger">*</span></label>
                                                     <input type="text" inputmode="numeric" class="w-100 form-control" placeholder="xxxx xxxx xxxx" required>
                                                 </div>
                                             </div>
@@ -281,8 +343,8 @@
                                             </div>
                                        </div>
                                        <div class="input-group">
-                                           <label>Name on Credit Card <span class="text-danger">*</span></label>
-                                           <input type="text" class="form-control w-100" placeholder="Name on Card" required>
+                                           <label>Name on Paypal <span class="text-danger">*</span></label>
+                                           <input type="text" class="form-control w-100" placeholder="Name on Paypal" required>
                                        </div>
                                        <div class="row">
                                             <div class="col-md-8">
@@ -302,7 +364,7 @@
                                         <div class="text-end mt-3 form-submission">
                                             <ul class="list-linline m-0">
                                                 <li class="list-inline-item"><button type="reset" class="btn btn-danger">Cancel</button></li>
-                                                <li class="list-inline-item"><button type="submit" class="btn btn-success">Add Credit Card</button></li>
+                                                <li class="list-inline-item"><button type="submit" class="btn btn-success">Add Paypal</button></li>
                                             </ul>
                                         </div>
                                     </div>
